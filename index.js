@@ -5,8 +5,15 @@ const Manager = require("./lib/Manager.js");
 const Engineer = require("./lib/Engineer.js");
 const Intern = require("./lib/Intern.js");
 
-//create an empty that will house all team member details
+//function to validate an email address
+const validateEmail = (email) => {
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
+        return true;
+    }
+    return false;
+}
 
+//create an empty that will house all team member details
 const teamMember = [];
 
 const managerDetails = () => {
@@ -32,7 +39,7 @@ const managerDetails = () => {
         name: 'email',
         message: "Enter Manager's email: ",
         validate: (value) => {
-            if (value) {return true}
+            if (validateEmail(value)) {return true}
             else {return 'Please enter a valid email:'}
         }},
         {
@@ -74,7 +81,7 @@ const engrDetails = () => {
         name: 'email',
         message: "Enter Engineer's email: ",
         validate: (value) => {
-            if (value) {return true}
+            if (validateEmail(value)) {return true}
             else {return 'Please enter a valid email:'}
         }},
         {
@@ -117,7 +124,7 @@ const internDetails = () => {
         name: 'email',
         message: "Enter Intern email: ",
         validate: (value) => {
-            if (value) {return true}
+            if (validateEmail(value)) {return true}
             else {return 'Please enter a valid email:'}
         }},
         {
@@ -267,7 +274,7 @@ console.log(`
 #################################
 Let me introduce my team members!
 #################################
-`)
+`);
 managerDetails();
 }
 
