@@ -205,10 +205,10 @@ function renderHTML() {
           <div id="team-div">
     `
     htmlGenerate.push(startHTML);
-    console.log(teamMember);
+    //console.log(teamMember);
     
 
-    for (let i  =0; i < teamMember.length; i++) {
+    for (let i  = 0; i < teamMember.length; i++) {
         let x = '';
         let y = teamMember[i].title;
         if (y == 'Manager') {
