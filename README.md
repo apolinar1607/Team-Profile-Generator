@@ -26,7 +26,7 @@
   
   A demonstration of the project functionality could be accessed in this link: https://drive.google.com/file/d/1VxLJd74wYvX-orrDrjLLi1VxAHZ8ruNf/view. A demonstation on how to test classes could be accessed in this link: https://drive.google.com/file/d/1HQvlnfyHKVNJjpwhDT2cEXH1BMXdOoC4/view. A sample output index.html is also included in the project folder. 
 
-  A generate index.html file is also included in the repo. Only the links under my name are real email and github page links.
+  A generated index.html from the application itself is also included in the repo. Only the links under my name are real email and github page links.
 
   The repository for this application could be accessed using the following link:
 
